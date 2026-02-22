@@ -1,0 +1,9 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow specific folders (if you have private assets or scripts)
+Disallow: /assets/private/
+
+# Link to your sitemap to help bots find your content faster
+Sitemap: https://satty1987.github.io/jammu_electricals/sitemap.xml
