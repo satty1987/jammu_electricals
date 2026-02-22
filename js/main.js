@@ -205,3 +205,17 @@ function closeBubble() {
   }
   // Auto-hide bubble after 9 seconds
   setTimeout(closeBubble, 9000);
+
+  function filterRates(cat, btn) {
+    // Update active tab
+    document.querySelectorAll('.rate-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    // Show/hide blocks
+    document.querySelectorAll('.rate-table-block').forEach(block => {
+      if (cat === 'all' || block.dataset.cat === cat) {
+        block.classList.remove('hidden');
+      } else {
+        block.classList.add('hidden');
+      }
+    });
+  }
