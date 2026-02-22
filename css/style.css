@@ -350,7 +350,25 @@
     60%      { transform: scale(1.35); opacity: 0.65; }
   }
   .wa-bubble.wa-hidden { display: none; }
-  @media(max-width: 480px) {
-    .wa-float { bottom: 16px; right: 14px; }
-    .wa-btn { width: 54px; height: 54px; }
-  }
+  .about{
+display:grid; grid-template-columns:1fr 1fr;
+ gap:64px;
+ align-items:center;
+} 
+    @media(max-width: 480px) {
+      .wa-float {
+        bottom: 16px;
+        right: 14px;
+      }
+  
+      .wa-btn {
+        width: 54px;
+        height: 54px;
+      }
+  
+      .about {
+        grid-template-columns: 1fr !important;
+  
+      }
+    }
+
